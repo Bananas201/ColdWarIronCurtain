@@ -330,7 +330,7 @@ ic_pulse = {
 		limit = {
 			tag = PAK
 			date > 1977.03.01
-			date < 1977.1040.30
+			date < 1977.04.30
 			NOT = { has_country_flag = Bhutto_1970s_Loaded_1977_Election }
 			has_country_flag = Bhutto_1970s_Loaded 
 		}
@@ -381,24 +381,16 @@ ic_pulse = {
 		country_event = PAK_Religous_Upheaval.1
 		set_country_flag = PAK_Religous_Upheaval_Loaded
 	}
-	
-	
 	if = {
 		limit = {
 			tag = PAK
 			date > 1967.07.01
 			date < 1967.08.30
 			NOT = { has_country_flag = Fatima_Jinnah_End }
-		}
-		country_event = Jinnah_President.6
-		set_country_flag = Fatima_Jinnah_End
-	}
-	if = {
-		limit = {
-			tag = PAK
-			date > 1967.07.01
-			date < 1967.08.30
-			NOT = { has_country_flag = Fatima_Jinnah_End }
+			has_country_leader = {
+				name = "Fatima Jinnah"
+				ruling_only = yes
+			}
 		}
 		country_event = Jinnah_President.6
 		set_country_flag = Fatima_Jinnah_End
@@ -628,7 +620,7 @@ ic_pulse = {
 		limit = {
 			tag = BAN
 			date > 1973.03.01
-			date < 1958.05.30
+			date < 1973.04.30
 		}
 		country_event = FG_AL.0
 	}
@@ -2312,6 +2304,7 @@ ic_pulse = {
 			}
 			transfer_state = 676
 			transfer_state = 941
+			transfer_state = 811
 			941 = {
 				add_core_of = KRD
 				remove_core_of = IRQ
@@ -2349,6 +2342,7 @@ ic_pulse = {
 			}
 			transfer_state = 676
 			transfer_state = 941
+			transfer_state = 811
 			941 = {
 				add_core_of = KRD
 				remove_core_of = IRQ
@@ -3373,7 +3367,6 @@ ic_pulse = {
 				tag = WGR
 				tag = EGY
 				tag = SOM
-				tag = FRA
 				tag = FIN
 			}
 		}
@@ -3391,6 +3384,12 @@ ic_pulse = {
 		#	load_focus_tree = SOR_1960s
 		#}
 		if = {
+			limit ={
+				tag = GRE
+			}
+			load_focus_tree = GRE_60s
+		}
+		if = {
 			limit = {
 				tag = PDG
 			}
@@ -3406,7 +3405,7 @@ ic_pulse = {
 			limit = {
 				tag = POL
 			}
-			load_focus_tree = 60s_POL
+			load_focus_tree = POL_60s
 		}
 		if = {
 			limit = {
@@ -3418,13 +3417,13 @@ ic_pulse = {
 			limit = {
 				tag = CZE
 			}
-			load_focus_tree = 60s_CZE
+			load_focus_tree = CZE_60s
 		}
 		if = {
 			limit = {
 				tag = YUG
 			}
-			load_focus_tree = 60s_YUG
+			load_focus_tree = YUG_60s
 		}
 		if = {
 			limit = {
@@ -3464,7 +3463,7 @@ ic_pulse = {
 					has_government = communism
 				}
 			}
-			load_focus_tree = 60s_PAK_Ayub_Start
+			load_focus_tree = PAK_Ayub_Start_60s
 		}
 		if = {
 			limit = {
@@ -3496,13 +3495,13 @@ ic_pulse = {
 			limit = {
 				tag = SRT
 			}
-			load_focus_tree = 60s_SRT
+			load_focus_tree = SRT_60s
 		}
 		if = {
 			limit = {
 				tag = KRD
 			}
-			load_focus_tree = 60s_KRD
+			load_focus_tree = KRD_60s
 		}
 		if = {
 			limit = {
@@ -3513,8 +3512,25 @@ ic_pulse = {
 		if = {
 			limit = {
 				tag = EGY
+				has_country_leader = {
+					name = "Gamal Abdel Nasser"
+					ruling_only = yes
+				}
 			}
 			load_focus_tree = UAR_60s
+		}
+		if = {
+			limit = {
+				tag = EGY
+				NOT = {
+					has_country_leader = {
+						name = "Gamal Abdel Nasser"
+						ruling_only = yes
+					}
+				}
+			}
+			load_focus_tree = generic_focus_60
+			set_country_flag = focus_tree_60_reset
 		}
 		if = {
 			limit = {
@@ -3526,13 +3542,13 @@ ic_pulse = {
 			limit = {
 				tag = SYR
 			}
-			load_focus_tree = 60s_SYR
+			load_focus_tree = SYR_60s
 		}
 		if = {
 			limit = {
 				tag = ZIM
 			}
-			load_focus_tree = 60s_ZIM
+			load_focus_tree = ZIM_60s
 		}
 		if = {
 			limit = {
@@ -3587,7 +3603,7 @@ ic_pulse = {
 			limit = {
 				tag = GHA
 			}
-			load_focus_tree = 60s_GHA
+			load_focus_tree = GHA_60s
 		}
 		if = {
 			limit = {
@@ -3605,7 +3621,7 @@ ic_pulse = {
 			limit = {
 				tag = FIN
 			}
-			load_focus_tree = 60s_FIN
+			load_focus_tree = FIN_60s
 		}
 		if = {
 			limit = {
@@ -4773,6 +4789,7 @@ ic_pulse = {
 	if = {
 		limit = {
 			tag = FRA
+			owns_state = 459
 			date > 1954.10.01
 			date < 1955.01.01
 			NOT = { has_country_flag = ALGERIA_WAR_START }
@@ -5721,6 +5738,9 @@ ic_pulse = {
 				tag = FRA
 				date > 1961.04.01
 				date < 1961.05.30
+				NOT = {
+					has_government = communism
+				}
 			}
 		country_event = algeirs.2
 	}
@@ -5729,16 +5749,29 @@ ic_pulse = {
 			tag = FRA
 			date > 1958.01.01
 			date < 1958.02.01
+			NOT = {
+				has_government = communism
+			}
 		}
 		country_event = fra_crisis.1
 	}
 	if = {
 		limit = {
 			tag = FRA
+			owns_state = 459
 			date > 1958.02.01
 			date < 1958.02.31
 		}
 		country_event = fra_crisis.2
+	}
+	if = {
+		limit = {
+			tag = NIC
+			date > 1968.02.01
+			date < 1968.05.31
+			has_government = maoism
+		}
+		country_event = nicc.17
 	}
 	if = {
 		limit = {
@@ -5790,6 +5823,7 @@ ic_pulse = {
 			tag = BRM
 			date > 1962.03.01
 			date < 1962.06.01
+			BRM = { has_unit_leader = 17118 }
 		}
 		country_event = burma.1
 	}
@@ -5872,7 +5906,7 @@ ic_pulse = {
 	if = {
 		limit = {
 			tag = DDR
-			date > 1972.07.31
+			date > 1975.12.5
 		}
 		country_event = { id = ddr.39 days = 14 random = 1 }
 	}
@@ -6165,6 +6199,9 @@ ic_pulse = {
 			date > 1961.05.29
 			date < 1961.06.02
 			tag = FRA
+			NOT = {
+				has_government = communism
+			}
 		}
 		news_event = fra_news.31
 	}
@@ -6181,6 +6218,9 @@ ic_pulse = {
 			date > 1960.02.01
 			date < 1960.02.09
 			tag = FRA
+			NOT = {
+				has_government = communism
+			}
 		}
 		news_event = fra_news.3
 	}
@@ -6197,6 +6237,9 @@ ic_pulse = {
 			date > 1960.01.25
 			date < 1960.02.02
 			tag = FRA
+			NOT = {
+				has_government = communism
+			}
 		}
 		news_event = fra_news.5
 	}
@@ -6205,6 +6248,7 @@ ic_pulse = {
 			date > 1960.03.01
 			date < 1960.03.05
 			tag = FRA
+			NOT = { has_government = communism }
 		}
 		news_event = fra_news.8
 	}
@@ -6213,6 +6257,7 @@ ic_pulse = {
 			date > 1960.03.10
 			date < 1960.03.23
 			tag = FRA
+			NOT = { has_government = communism }
 		}
 		news_event = fra_news.9
 	}
@@ -6221,6 +6266,7 @@ ic_pulse = {
 			date > 1960.04.03
 			date < 1960.04.10
 			tag = FRA
+			NOT = { has_government = communism }
 		}
 		news_event = fra_news.10
 	}
@@ -6757,7 +6803,9 @@ ic_pulse = {
 	}
 	if = {
 		limit = {
-			original_tag = FRA
+			any_subject_country = {
+				owns_state = 816
+			}
 			date > 1959.12.31
 			date < 1961.03.01
 		}
@@ -6773,7 +6821,9 @@ ic_pulse = {
 	}
 	if = {
 		limit = {
-			original_tag = FRA
+			any_subject_country = {
+				owns_state = 761
+			}
 			date > 1960.04.26
 			date < 1961.01.01
 		}
@@ -7029,8 +7079,13 @@ ic_pulse = {
 				has_full_control_of_state = 448
 				has_full_control_of_state = 661
 			}
-			FRA = {
-				has_full_control_of_state = 775
+			OR = {
+				FRA = {
+					has_full_control_of_state = 775
+				}
+				LBA = {
+					has_full_control_of_state = 775
+				}
 			}
 		}
 		country_event = decolonization.37
@@ -8616,10 +8671,25 @@ ic_pulse = {
 			date < 1956.12.1
 			tag = MOR
 			MOR = {
-				is_subject_of = FRA
+				OR = {
+					is_subject_of = FRA
+					is_subject_of = ENG
+				}
 			}
 		}
 		country_event = decolonization.55
+	}
+	#Tunisia independence if france goes red
+	if = {
+		limit = {
+			date > 1956.11.1
+			date < 1956.12.1
+			tag = TUN
+			TUN = {
+				is_subject_of = ENG
+			}
+		}
+		country_event = decolonization.58
 	}
 	#kenya general flavor
 	if = {

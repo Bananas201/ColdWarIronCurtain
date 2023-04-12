@@ -1,5 +1,5 @@
 focus_tree = {
-	id = 1950s_CZE
+	id = CZE_1950s
 	country = {
 		factor = 0
 		modifier = {
@@ -999,6 +999,9 @@ focus_tree = {
 		y = 12
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event
 		}
 	}
 	focus = {
@@ -2417,6 +2420,9 @@ focus_tree = {
 		y = 12
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event
 		}
 	}
 	focus = {

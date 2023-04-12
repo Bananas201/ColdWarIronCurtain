@@ -18001,4 +18001,12 @@ spriteTypes = {
         name = "GFX_ardmore"
 		texturefile = "gfx/event_pictures/ardmore.dds"
 	}
+	spriteType = {
+        name = "GFX_Fonseca_Funeral"
+		texturefile = "gfx/event_pictures/Fonseca_Funeral.dds"
+	}
+	spriteType = {
+        name = "GFX_nicaragua_mapml"
+		texturefile = "gfx/event_pictures/nicaragua_mapml.dds"
+	}
 }

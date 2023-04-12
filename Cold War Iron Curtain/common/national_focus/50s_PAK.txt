@@ -1,5 +1,5 @@
 focus_tree = {
-	id = 50s_PAK
+	id = PAK_50s
 	country = {
 		factor = 0
 		modifier = {
@@ -350,6 +350,9 @@ focus_tree = {
 		}
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event
 		}
 	}
 	focus = {
@@ -934,6 +937,9 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event
+		}
 	}
 	focus = {
 		id = PAK_Two_Languages
@@ -1281,6 +1287,9 @@ focus_tree = {
 		}
 		available = {
 			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = autocompleted_by_event
 		}
 	}
 	focus = {
