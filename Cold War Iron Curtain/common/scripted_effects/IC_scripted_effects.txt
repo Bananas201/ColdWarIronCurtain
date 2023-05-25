@@ -45,6 +45,157 @@ ic_pulse = {
 	# }
 	if = {
 		limit = {
+			tag = SOV
+			has_idea = SOV_Discipline_strengthening_initiative
+			NOT = {
+				has_country_flag = disciplined_labor
+			}
+		}
+		set_country_flag = {
+			flag = disciplined_labor
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			LaborDiscipline = 0.5
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved_again
+			}
+			NOT = {
+				has_country_flag = disciplined_labor_strength
+			}
+		}
+		set_country_flag = {
+			flag = disciplined_labor_strength
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			LaborDiscipline = 1
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved
+			}
+			has_country_flag = Decree_No_745
+			NOT = {
+				has_country_flag = disciplined_labor_decree745
+			}
+		}
+		set_country_flag = {
+			flag = disciplined_labor_decree745
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			LaborDiscipline = 0.5
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved
+				has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved_again
+			}
+			has_country_flag = Decree_No_744
+			NOT = {
+				has_country_flag = disciplined_labor_decree744
+			}
+		}
+		set_country_flag = {
+			flag = disciplined_labor_decree744
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			LaborDiscipline = 0.5
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			has_idea = SOV_Campaign_on_Strengthening_Labour_Discipline_Improved_again
+			has_country_flag = Decree_No_744
+			NOT = {
+				has_country_flag = disciplined_labor_again
+			}
+		}
+		set_country_flag = {
+			flag = disciplined_labor_again
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			LaborDiscipline = 1
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			has_idea = SOV_Anti_corruption_campaign_in_MVD
+			NOT = {
+				has_country_flag = corruption_lowered_MVD
+			}
+		}
+		set_country_flag = {
+			flag = corruption_lowered_MVD
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			CorruptionLevel = -0.02
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			has_idea = SOV_Ongoing_mass_dismissals_in_the_Ministry_of_Internal_Affairs
+			NOT = {
+				has_country_flag = corruption_lowered_Internal_Affairs
+			}
+		}
+		set_country_flag = {
+			flag = corruption_lowered_Internal_Affairs
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			CorruptionLevel = -0.02
+		}
+	}
+	if = {
+		limit = {
+			tag = SOV
+			has_idea = SOV_Mass_reshuffles_and_dismissals_in_the_party_and_administrative_apparatus
+			NOT = {
+				has_country_flag = mass_reshuffles
+			}
+		}
+		set_country_flag = {
+			flag = mass_reshuffles
+			days = 30
+			value = 1
+		}
+		add_to_variable = {
+			CorruptionLevel = -0.02
+		}
+	}
+	if = {
+		limit = {
 			tag = VIE
 			has_war_with = NLF
 		}
@@ -3283,7 +3434,7 @@ ic_pulse = {
 			NOT = { tag = PRC }
 			NOT = { tag = POL }
 			NOT = { tag = SOM }
-			NOT = { tag = TUR }
+			#NOT = { tag = TUR }
 			NOT = { tag = KOR }
 			NOT = { tag = YUG }
 			NOT = { tag = KPA }
@@ -3413,12 +3564,12 @@ ic_pulse = {
 			}
 			load_focus_tree = BUL_60s
 		}
-		if = {
-			limit = {
-				tag = CZE
-			}
-			load_focus_tree = CZE_60s
-		}
+		# if = {
+			# limit = {
+				# tag = CZE
+			# }
+			# load_focus_tree = CZE_60s
+		# }
 		if = {
 			limit = {
 				tag = YUG
@@ -3436,6 +3587,20 @@ ic_pulse = {
 				tag = DDR
 			}
 			load_focus_tree = GDR_1960s
+		}
+		if = {
+			limit = {
+				tag = FRA
+				has_government = communism
+			}
+			load_focus_tree = FRA_1960s_Communist
+		}
+		if = {
+			limit = {
+				tag = FRA
+				has_government = maoism
+			}
+			load_focus_tree = FRA_1960s_Maoist
 		}
 		if = {
 			limit = {
@@ -6959,8 +7124,8 @@ ic_pulse = {
 	if = {
 		limit = {
 			tag = AFG
-			date > 1961.08.01
-			date < 1961.10.01
+			date > 1973.08.01
+			date < 1973.10.01
 			NOT = { has_country_flag = AFG_NEWS_RESIGN }
 		}
 		set_country_flag = AFG_NEWS_RESIGN
@@ -7637,56 +7802,69 @@ ic_pulse = {
 	}
 
 	if = {
-				limit = {
-					tag = GRE
-					date > 1951.9.9
-					date < 1952.1.1
-					NOT = { has_government = neutrality }
-					NOT = { has_government = monarchism }
-					NOT = { has_government = communism }
-					NOT = { has_government = maoism }
-				}
-				country_event = { id = GRE_Elections.1 days = 1 }
-			}
+		limit = {
+			tag = GRE
+			date > 1951.9.9
+			date < 1952.1.1
+			NOT = { has_government = neutrality }
+			NOT = { has_government = monarchism }
+			NOT = { has_government = communism }
+			NOT = { has_government = maoism }
+		}
+		country_event = { id = GRE_Elections.1 days = 1 }
+	}
 
 	if = {
-				limit = {
-					tag = GRE
-					date > 1952.11.15
-					date < 1953.1.1
-					NOT = { has_government = neutrality }
-					NOT = { has_government = monarchism }
-					NOT = { has_government = communism }
-					NOT = { has_government = maoism }
-				}
-				country_event = { id = GRE_Elections.2 days = 1 }
-			}
+		limit = {
+			tag = GRE
+			date > 1952.11.15
+			date < 1953.1.1
+			NOT = { has_government = neutrality }
+			NOT = { has_government = monarchism }
+			NOT = { has_government = communism }
+			NOT = { has_government = maoism }
+		}
+		country_event = { id = GRE_Elections.2 days = 1 }
+	}
 
 	if = {
-				limit = {
-					tag = GRE
-					date > 1956.2.18
-					date < 1957.1.1
-					NOT = { has_government = neutrality }
-					NOT = { has_government = monarchism }
-					NOT = { has_government = communism }
-					NOT = { has_government = maoism }
-				}
-				country_event = { id = GRE_Elections.3 days = 1 }
+		limit = {
+			original_tag = GRE
+			date > 1955.10.1
+			date < 1955.11.30
+			has_country_leader = {
+				name = "Alexandros Papagos"
+				ruling_only = yes
 			}
+		}
+		country_event = greece.6
+	}
 
 	if = {
-				limit = {
-					tag = GRE
-					date > 1958.5.11
-					date < 1959.1.1
-					NOT = { has_government = neutrality }
-					NOT = { has_government = monarchism }
-					NOT = { has_government = communism }
-					NOT = { has_government = maoism }
-				}
-				country_event = { id = GRE_Elections.4 days = 1 }
-			}
+		limit = {
+			tag = GRE
+			date > 1956.2.18
+			date < 1957.1.1
+			NOT = { has_government = neutrality }
+			NOT = { has_government = monarchism }
+			NOT = { has_government = communism }
+			NOT = { has_government = maoism }
+		}
+		country_event = { id = GRE_Elections.3 days = 1 }
+	}
+
+	if = {
+		limit = {
+			tag = GRE
+			date > 1958.5.11
+			date < 1959.1.1
+			NOT = { has_government = neutrality }
+			NOT = { has_government = monarchism }
+			NOT = { has_government = communism }
+			NOT = { has_government = maoism }
+		}
+		country_event = { id = GRE_Elections.4 days = 1 }
+	}
 
 	if = {
 		limit = {

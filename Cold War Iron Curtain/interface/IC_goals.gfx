@@ -146,6 +146,22 @@ spriteTypes = {
 	SpriteType = { name = "GFX_SOV_Adopt_New_Networking_Solutions" texturefile = "gfx/interface/goals/Kaganovich/SOV_Adopt_New_Networking_Solutions.dds" }
 	SpriteType = { name = "GFX_SOV_Unveil_The_Experimental_Planning_Cluster_Moscow" texturefile = "gfx/interface/goals/Kaganovich/SOV_Unveil_The_Experimental_Planning_Cluster_Moscow.dds" }
 	SpriteType = { name = "GFX_SOV_Construction_Of_The_EGSVT_Network" texturefile = "gfx/interface/goals/Kaganovich/SOV_Construction_Of_The_EGSVT_Network.dds" }
+	SpriteType = { name = "GFX_SOV_Expand_Medical_Equipment_Production_Facilities" texturefile = "gfx/interface/goals/Kaganovich/SOV_Expand_Medical_Equipment_Production_Facilities.png"}
+	SpriteType = { name = "GFX_SOV_Expand_Medical_Research_Facilities" texturefile = "gfx/interface/goals/Kaganovich/SOV_Expand_Medical_Research_Facilities.png"}
+	SpriteType = { name = "GFX_SOV_Expand_numbers_of_Medical_Students" texturefile = "gfx/interface/goals/Kaganovich/SOV_Expand_numbers_of_Medical_Students.png"}
+	SpriteType = { name = "GFX_SOV_Expand_numbers_of_Technical_Students" texturefile = "gfx/interface/goals/Kaganovich/SOV_Expand_numbers_of_Technical_Students.png"}
+	SpriteType = { name = "GFX_SOV_Expand_Pedagogy_Education_Schools" texturefile = "gfx/interface/goals/Kaganovich/SOV_Expand_Pedagogy_Education_Schools.png"}
+	SpriteType = { name = "GFX_SOV_Fund_Expansion_of_Elementary_and_Medium_Schools" texturefile = "gfx/interface/goals/Kaganovich/SOV_Fund_Expansion_of_Elementary_and_Medium_Schools.png"}
+	SpriteType = { name = "GFX_SOV_Hire_More_Rural_Militsioners" texturefile = "gfx/interface/goals/Kaganovich/SOV_Hire_More_Rural_Militsioners.png"}
+	SpriteType = { name = "GFX_SOV_Improve_Militsoners_Training_and_Equipment" texturefile = "gfx/interface/goals/Kaganovich/SOV_Improve_Militsoners_Training_and_Equipment.png"}
+	SpriteType = { name = "GFX_SOV_Increase_Funding_For_Urban_Healthcare" texturefile = "gfx/interface/goals/Kaganovich/SOV_Increase_Funding_For_Urban_Healthcare.png"}
+	SpriteType = { name = "GFX_SOV_Introduce_People_Control_Into_Law_Enforcement" texturefile = "gfx/interface/goals/Kaganovich/SOV_Introduce_People_Control_Into_Law_Enforcement.png"}
+	SpriteType = { name = "GFX_SOV_Introduction_of_Peoples_Control_in_the_Soviet_Healthcare" texturefile = "gfx/interface/goals/Kaganovich/SOV_Introduction_of_Peoples_Control_in_the_Soviet_Healthcare.png"}
+	SpriteType = { name = "GFX_SOV_Introduction_of_Peoples_Control_into_Education" texturefile = "gfx/interface/goals/Kaganovich/SOV_Introduction_of_Peoples_Control_into_Education.png"}
+	SpriteType = { name = "GFX_SOV_Kickstart_Rural_Healthcare" texturefile = "gfx/interface/goals/Kaganovich/SOV_Kickstart_Rural_Healthcare.png"}
+	SpriteType = { name = "GFX_SOV_Overhaul_Rural_Education" texturefile = "gfx/interface/goals/Kaganovich/SOV_Overhaul_Rural_Education.png"}
+	SpriteType = { name = "GFX_SOV_Strengthen_High_Level_Party_Disciplines" texturefile = "gfx/interface/goals/Kaganovich/SOV_Strengthen_High_Level_Party_Disciplines.png"}
+	SpriteType = { name = "GFX_SOV_Strengthen_Procurator_Office_And_Expand_PPC_Cooperation" texturefile = "gfx/interface/goals/Kaganovich/SOV_Strengthen_Procurator_Office_And_Expand_PPC_Cooperation.png"}
 
 	SpriteType = { name = "GFX_Acquire_American_P47" texturefile = "gfx/interface/goals/Acquire_American_P-47s.dds" }
 	SpriteType = { name = "GFX_Acquire_The_Duarte_Frigate" texturefile = "gfx/interface/goals/Acquire_The_Duarte_Frigate.dds" }
@@ -21873,5 +21889,87 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_"
 		texturefile = "gfx/interface/goals/.png"
+	}
+
+#Andropov
+	SpriteType = {
+		name = "GFX_SOV_Acceleration_of_Scientific_and_Technical_Progress_in_the_National_Economy"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Acceleration_of_Scientific_and_Technical_Progress_in_the_National_Economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Address_Accumulated_Problems"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Address_Accumulated_Problems.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Andropov_Diplomacy"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Andropov_Diplomacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Andropov_Elected_GenSec"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Andropov_Elected_GenSec.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Continue_Normalization_Talks_with_PRC"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Continue_Normalization_Talks_with_PRC.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_Deploy_Rockets_in_Eastern_Europe"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Deploy_Rockets_in_Eastern_Europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Emphasis_on_Innovational_Planning_With_Limited_Socialist_Market"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Emphasis_on_Innovational_Planning_With_Limited_Socialist_Market.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Emphasis_on_Socialist_Market_and_Creation_of_Private_Sector"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Emphasis_on_Socialist_Market_and_Creation_of_Private_Sector.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Invite_Hungarian_Leader"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Invite_Hungarian_Leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Gorbachev_Ryzhkov_Team_Leadership"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Gorbachev_Ryzhkov_Team_Leadership.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Invite_Samantha_Smith_to_USSR"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Invite_Samantha_Smith_to_USSR.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Letter_to_American_President"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Letter_to_American_President.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Mass_Arrests_of_Corrupted_Officials"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Mass_Arrests_of_Corrupted_Officials.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Open_Up_New_Cases"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Open_Up_New_Cases.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Prioritize_Intensive_Development_of_Economy"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Prioritize_Intensive_Development_of_Economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Publish_Samantha_Smith_Letter_In_Pravda"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Publish_Samantha_Smith_Letter_In_Pravda.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Romanov_Dolgikh_Team_Leadership"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Romanov_Dolgikh_Team_Leadership.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Send_Gorbachev_to_Hungary"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Send_Gorbachev_to_Hungary.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Send_Romanov_to_Hungary"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Send_Romanov_to_Hungary.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_Start_Campaign_on_Strengthenin_Labour_Discipline"
+		texturefile = "gfx/interface/goals/Andropov/SOV_Start_Campaign_on_Strengthenin_Labour_Discipline.dds"
 	}
 }

@@ -336,18 +336,7 @@ imf_decisions = {
 	}
 	priority = 60
 }
-foreign_support = {
-	icon = generic_political_actions
-	
-}
 
-foreign_politics = {
-	icon = GFX_decision_globedecision
-	#picture = GFX_foreign_politics_decision
-	priority = 150
-	visible_when_empty = yes
-
-}
 Yugoslavia_influence_decisions = {
 	icon = generic_political_actions
 
@@ -666,15 +655,32 @@ arakan_insurgency_Decisions = {
 }
 	
 uia_decisions = {
-	
 	icon = infiltration
 	picture = GFX_decision_bannerUIA
-	scripted_gui = country_state_target_menu_panel
 	allowed = {
-		tag = SOV
+		OR = {
+			tag = SOV
+			tag = USA
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = {
+			state = 93
+			state = 1020
+			state = 73
+			state = 80
+			state = 199
+			state = 89
+			state = 243
+			state = 91
+		}
+		highlight_color_while_active = 0
+		highlight_color_before_active = 3
 	}
 	visible = {
-		has_country_flag = ukranian_seccessionism
+		SOV = {
+			has_country_flag = ukranian_seccessionism
+		}
 	}
 }
 

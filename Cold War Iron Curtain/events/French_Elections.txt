@@ -862,13 +862,6 @@ country_event = {
 			centrist = 0
 			Social_Democratic = 10
 		}
-		hidden_effect = {
-			activate_mission = next_elections
-			add_days_mission_timeout = {
-				mission = next_elections
-				days = 164
-			}
-		}
 		ai_chance = {
 			factor = 15
 			modifier = {
@@ -914,7 +907,7 @@ country_event = {
 			trotskyism = 0
 			maoism = 0
 			communism = 36.5
-			conservative = 10.9
+			conservative = 10.5
 			centrist = 0
 			Social_Democratic = 21
 		}
